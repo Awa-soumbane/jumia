@@ -13,18 +13,19 @@ body{
   background-color: ghostwhite;
   justify-content: center;
   align-items: center;
-  height: 7px;
-  margin-top: 15px;
+  height: 15px;
+  margin-top: 25px;
 }
 
-#toi {
-  text-align: left;
+.toi {
+
   width: 20%; 
-  padding-left: 100px;
+  padding-left: 30px;
   color: orange;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 15px;
+}
+#etoile{
+  height: 2px;
 }
 .color{
   color: orange;
@@ -39,10 +40,27 @@ ul {
 li {
   float: left;
   margin-left: 50px;
- 
- 
+ }
+ /* etape3 connecter */
+.compte {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  font-size: 16px;
 }
-
+#aid{
+  width: 60px;
+  font-size: 16px;
+}
+#aid:hover{
+     color: orange;
+}
+#con:hover{
+  color: orange;
+}#con{
+  width: 110px;
+  font-size: 16px;
+}
 
 .dhh{
   width: 100px; 
@@ -56,6 +74,8 @@ li {
   align-items: center;
   width: 80%;
   padding-left: 300px;
+  justify-content: center;
+  margin-bottom: 20px;
 
 }
 /* petit image jumia  */
@@ -70,27 +90,20 @@ li {
 /* étape3 */
 .moi {
   background-color: white;
-  width: 1440px;
+  width: 100%;
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  
 
 }
 /* etage3 barre de recherche */
-.moi .bloc1 {
-  width: 60%;
+.bloc1 {
+
   display: flex;
 
 }
-/* etape3 connecter */
-.compte {
-  display: flex;
-  gap: 20px;
-  
 
-}
 /* etape3 connecter les espacements icon */
 
 a{
@@ -102,17 +115,16 @@ a:hover{
   color: orange;
 }
 #lo {
-  width: 50%;
+  width: 400px;
   height: 30px;
   margin-left: 120px;
- 
-}
-
+ }
 #bnt {
   background-color: orangered;
   width: 130px;
   height: 35px;
   margin-left: 12px;
+  
 }
 
 .you {
@@ -126,22 +138,14 @@ a:hover{
  
 }
 
-.jumia {
-  
+.jumia { 
   background-color: white;
   height: 450px;
   width: 250px;
-  margin-top: 20px;
- margin-right: 20px;
-  
 }
 .nous{
   color:orange;
 
-}
-Nous{
-  color: black;
-  gap: 5px;
 }
 .deals:hover{
   color: blue;
@@ -156,15 +160,6 @@ padding: 0;
 }
 
 /* slideshop */
-
- #slider{
-  width: 50%;
-  height: 450px;
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  
- }
  
  #slide{
   width: 700px;
@@ -174,19 +169,16 @@ padding: 0;
 
   
  }
-
-
 .bas {
   height: 500px;
   width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 10px;
-  margin-left: 20px;
-  
-  
+  justify-content: space-around;
+  margin-top: 30px;
 
+}.toi a{
+  display: flex;
+  justify-content: center;
 }
 .gauche {
   height: 500px;
@@ -200,7 +192,6 @@ display: flex;
 flex-wrap: wrap;
 background-color: white;
 width: 200px;
-margin-top: 20px;
 padding-left: 15px;
 
 }
@@ -213,21 +204,23 @@ padding-left: 15px;
 
 footer{
   background-color: white;
-  margin-top: 20px;
-  width: 90%;
+  margin-top: auto;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
 }
 #footer{
   display: flex;
   gap: 10px;
+  
+  
 }
 footer img{
   height: 110px;
   margin: 0 auto;
+ 
 }
 
 .footer2
@@ -250,30 +243,72 @@ footer img{
 
 
 @media (max-width: 1000px) {
-  #Image img, #menu1, .moi .bloc1{
+  #Image img,.moi .bloc1, #menu1, .imgbas img,.gauche, #cool, #panier{
     display: none;
   }
+  bady{
+    width: 100px;
+  }
   .moi{
-    width: 100%;
+    width: 370px;
     display: flex;
-    justify-content: space-between;
-    margin: 0;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+ 
   }
   .dhh img{
     width: 75px;
   height: 25px;
+  margin-right: -1px;
   }
  
   .bas{
     flex-direction: column;
-    margin-top: 270px;
+    margin-top: 190px;
+    padding: 5px;
+   display: flex;
+   justify-content: center;
+   
   }
   #slider img{
-    width: 60%;
+    width: auto;
     height: 200px;
+    align-items: center;
+    margin: 3px;
+   gap: 5px;
+   padding: 2px;
   }
-  footer{
-    width: 70%;
-    margin-top: 400px;
+  .dhh img{
+   margin-top: 9px;
+   width: 80px;
+   margin: 8px;
+  }  
+  .jumia{
+    display: flex;
+    align-items: center;
+    margin-top: -210px;
+    width: 380px;
+    
+  }.compte{
+    margin-right: 20px;
+   
+  }.con{
+    width: 100px;
   }
-}  
+  footer {
+  margin-top: -20px;
+  width: auto;
+  margin: 0; 
+  }
+    footer img{
+    height: 70px;
+    margin: 0 auto;
+   
+  }.bouton2:hover,.bouton1:hover
+  {
+    cursor: pointer;
+  }
+  }
+ 
+ 
